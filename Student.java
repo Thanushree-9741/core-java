@@ -1,8 +1,8 @@
-public class Employee {
+class Student {
     private String name;
     private int age;
-    private String department;
-    private String company;
+    private String grade;
+    private String school;
     private String city;
 
     public void setName(String name) {
@@ -19,18 +19,18 @@ public class Employee {
         return age;
     }
 
-    public void setDepartment(String department) {
-        this.department = department;
+    public void setGrade(String grade) {
+        this.grade = grade;
     }
-    public String getDepartment() {
-        return department;
+    public String getGrade() {
+        return grade;
     }
 
-    public void setCompany(String company) {
-        this.company = company;
+    public void setSchool(String school) {
+        this.school = school;
     }
-    public String getCompany() {
-        return company;
+    public String getSchool() {
+        return school;
     }
 
     public void setCity(String city) {

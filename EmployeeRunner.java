@@ -1,60 +1,56 @@
 public class EmployeeRunner {
     public static void main(String[] args) {
-        
-        int[] empIds = Employee.getEmpIds();
-        for (int j = 0; j < empIds.length; j++) {
-            System.out.println("Employee ID: " + empIds[j]);
-        }
+        Employee[] employees = new Employee[5];
 
-        float[] empHours = Employee.getEmpHours();
-        for (int j = 0; j < empHours.length; j++) {
-            System.out.println("Work Hours: " + empHours[j]);
-        }
+        Employee e1 = new Employee();
+        e1.setName("Ramesh");
+        e1.setAge(30);
+        e1.setDepartment("HR");
+        e1.setCompany("Infosys");
+        e1.setCity("Bangalore");
+        employees[0] = e1;
 
-        long[] empMobile = Employee.getEmpMobile();
-        for (int j = 0; j < empMobile.length; j++) {
-            System.out.println("Mobile Number: " + empMobile[j]);
-        }
+        Employee e2 = new Employee();
+        e2.setName("Sita");
+        e2.setAge(28);
+        e2.setDepartment("Finance");
+        e2.setCompany("Wipro");
+        e2.setCity("Mysore");
+        employees[1] = e2;
 
-        double[] empSalary = Employee.getEmpSalary();
-        double sum = 0;
-        for (int j = 0; j < empSalary.length; j++) {
-            System.out.println(empSalary[j]);
-            sum += empSalary[j];
-        }
+        Employee e3 = new Employee();
+        e3.setName("Kiran");
+        e3.setAge(26);
+        e3.setDepartment("IT");
+        e3.setCompany("TCS");
+        e3.setCity("Hubli");
+        employees[2] = e3;
 
-        float average = (float) sum / empSalary.length;
-        System.out.println("\nAverage Salary: " + average);
-        
+        Employee e4 = new Employee();
+        e4.setName("Deepa");
+        e4.setAge(32);
+        e4.setDepartment("Marketing");
+        e4.setCompany("Accenture");
+        e4.setCity("Chennai");
+        employees[3] = e4;
 
-        byte[] empRating = Employee.getEmpRating();
-        for (int j = 0; j < empRating.length; j++) {
-            System.out.println("Rating: " + empRating[j]);
-        }
+        Employee e5 = new Employee();
+        e5.setName("Manoj");
+        e5.setAge(35);
+        e5.setDepartment("Sales");
+        e5.setCompany("IBM");
+        e5.setCity("Hyderabad");
+        employees[4] = e5;
 
-        short[] empDeptNo = Employee.getEmpDeptNo();
-        for (int j = 0; j < empDeptNo.length; j++) {
-            System.out.println("Department No: " + empDeptNo[j]);
-        }
-
-        boolean[] empActive = Employee.getEmpActive();
-        for (int j = 0; j < empActive.length; j++) {
-            System.out.println("Active: " + empActive[j]);
-        }
-
-        boolean[] empFullTime = Employee.getEmpFullTime();
-        for (int j = 0; j < empFullTime.length; j++) {
-            System.out.println("Full-Time: " + empFullTime[j]);
-        }
-
-        char[] empGrades = Employee.getEmpGrades();
-        for (int j = 0; j < empGrades.length; j++) {
-            System.out.println("Grade: " + empGrades[j]);
-        }
-
-        String[] empNames = Employee.getEmpNames();
-        for (int j = 0; j < empNames.length; j++) {
-            System.out.println("Name: " + empNames[j]);
+        for (int i = 0; i < employees.length; i++) {
+            System.out.println("Employee " + (i + 1) + " Details:");
+            Employee emp = employees[i];
+            System.out.println("Name: " + emp.getName());
+            System.out.println("Age: " + emp.getAge());
+            System.out.println("Department: " + emp.getDepartment());
+            System.out.println("Company: " + emp.getCompany());
+            System.out.println("City: " + emp.getCity());
+            System.out.println("----------------------------------");
         }
     }
 }
