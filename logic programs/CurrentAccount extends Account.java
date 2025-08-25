@@ -1,0 +1,12 @@
+class CurrentAccount extends Account {
+    String type = "Current Account";
+
+    CurrentAccount(String name, int number, double balance) {
+        super(name, number, balance);
+    }
+
+    void showAccountType() {
+        System.out.println("Account Type: " + type);
+    }
+}
+

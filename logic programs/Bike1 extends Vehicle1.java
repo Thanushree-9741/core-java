@@ -1,0 +1,13 @@
+class Bike1 extends Vehicle1 {
+    String type;
+
+    Bike1(String brand, int speed, String type) {
+        super(brand, speed);  // calling parent constructor
+        this.type = type;
+        System.out.println("Bike constructor called for " + this.brand);
+    }
+
+    void display() {
+        System.out.println("Bike Brand: " + this.brand + ", Speed: " + this.speed + " km/h, Type: " + this.type);
+    }
+}
