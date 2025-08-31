@@ -1,9 +1,0 @@
-class Bike extends Vehicle {
-    Bike() {
-        brand = "Bike";
-    }
-
-    void wheelie() {
-        System.out.println("Bike is doing a wheelie 🏍️");
-    }
-}
