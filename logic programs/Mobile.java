@@ -1,5 +1,4 @@
-class Mobile {
-    String brand;
+class Mobile {    String brand;
 
     Mobile(String brand) {
         this.brand = brand;

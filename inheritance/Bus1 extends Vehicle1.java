@@ -1,13 +1,1 @@
-class Bus1 extends Vehicle1 {
-    int capacity;
-
-    Bus1(String brand, int speed, int capacity) {
-        super(brand, speed);  // calling parent constructor
-        this.capacity = capacity;
-        System.out.println("Bus constructor called for " + this.brand);
-    }
-
-    void display() {
-        System.out.println("Bus Brand: " + this.brand + ", Speed: " + this.speed + " km/h, Capacity: " + this.capacity + " passengers");
-    }
-}
+class Bus1 extends Vehicle1 {    int capacity;    Bus1(String brand, int speed, int capacity) {        super(brand, speed);  // calling parent constructor        this.capacity = capacity;        System.out.println("Bus constructor called for " + this.brand);    }    void display() {        System.out.println("Bus Brand: " + this.brand + ", Speed: " + this.speed + " km/h, Capacity: " + this.capacity + " passengers");    }}

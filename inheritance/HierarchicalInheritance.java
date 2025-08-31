@@ -1,13 +1,1 @@
-class HierarchicalInheritanceExample2 {
-    public static void main(String[] args) {
-        Android samsung = new Android("Samsung");
-        samsung.showBrand();
-        samsung.osType();
-
-        System.out.println();
-
-        iOS apple = new iOS("Apple");
-        apple.showBrand();
-        apple.osType();
-    }
-}
+class HierarchicalInheritanceExample2 {    public static void main(String[] args) {        Android samsung = new Android("Samsung");        samsung.showBrand();        samsung.osType();        System.out.println();        iOS apple = new iOS("Apple");        apple.showBrand();        apple.osType();    }}
