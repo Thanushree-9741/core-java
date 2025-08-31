@@ -1,1 +1,0 @@
-class President {    String name = "President: Mr. Sharma";    void showPresident() {        System.out.println(name);    }}

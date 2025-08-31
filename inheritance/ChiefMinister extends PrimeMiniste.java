@@ -1,1 +1,0 @@
-class ChiefMinister extends PrimeMinister {    String name = "Chief Minister: Mr. Kumar";    void showCM() {        System.out.println(name);    }} 
