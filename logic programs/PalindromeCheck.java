@@ -1,18 +1,26 @@
-class PalindromeCheck {
-    public static void main(String[] args) {
-        int number = 121;  
-        int original = number;
-        int reverse = 0;
+package Package.logicprogram;
 
-        while (number > 0) {
-            int digit = number % 10;
-            reverse = reverse * 10 + digit;
-            number /= 10;
+public class PalindromeCheck {
+
+    public static void main(String[] args) {
+        String str = "MADAM";   // example word
+        int left = 0;
+        int right = str.length() - 1;
+        boolean isPalindrome = true;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
         }
 
-        if (original == reverse)
-            System.out.println(original + " is a Palindrome.");
-        else
-            System.out.println(original + " is not a Palindrome.");
+        if (isPalindrome) {
+            System.out.println(str + " is a Palindrome");
+        } else {
+            System.out.println(str + " is NOT a Palindrome");
+        }
     }
 }

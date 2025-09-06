@@ -1,14 +1,18 @@
-class ReverseNumber {
-    public static void main(String[] args) {
-        int number = 1234;
-        int reverse = 0;
+package Package.logicprogram;
 
-        while (number > 0) {
-            int digit = number % 10;
-            reverse = reverse * 10 + digit;
-            number /= 10;
+public class ReverseNumber {
+    public static void main(String[] args) {
+        int num = 123;   // example number
+        int original = num;
+        int reversed = 0;
+
+        while (num != 0) {
+            int digit = num % 10;       // get last digit
+            reversed = reversed * 10 + digit; // build reversed
+            num = num / 10;             // remove last digit
         }
 
-        System.out.println("Reversed number = " + reverse);
+        System.out.println("Original number: " + original);
+        System.out.println("Reversed number: " + reversed);
     }
 }
