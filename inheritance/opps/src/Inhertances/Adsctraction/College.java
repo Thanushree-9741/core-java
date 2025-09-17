@@ -1,7 +1,7 @@
 package Inhertances.Adsctraction;
 
 public class College extends University{
- private String name;
+ public String name;
  public College(){}
     public College(String name, String universityName){
      super(universityName);
